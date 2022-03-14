@@ -1077,6 +1077,10 @@
     border-radius: 25px;
     width: 100%;
 }
+#projects .filters-content .item video {
+   border-radius: 25px;
+   width: 100%;
+}
  #projects {
     padding-top: 120px;
 }
