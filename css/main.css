@@ -23,7 +23,6 @@
      box-sizing: border-box;
 }
  html, body {
-     font-family: 'Raleway', sans-serif;
      font-weight: 400;
      background-color: #fff;
      font-size: 16px;
@@ -244,27 +243,6 @@
      text-transform: uppercase;
      letter-spacing: 2px;
      float: left;
-}
-.header-area .main-nav .logo:hover {
-    -webkit-transition: all .5s ease 5s;
-    -moz-transition: all .5s ease 5s;
-    -o-transition: all .5s ease 5s;
-    transition: all .5s ease 5s;
-    visibility: hidden;
-    opacity: 0%
-}
-.header-area .main-nav .secret {
-    margin-left: -183px;
-    line-height: 80px;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    opacity: 0%
-}
-.header-area .main-nav .secret:hover {
-    visibility: visible;
-    opacity: 100%
 }
  .header-area .main-nav .nav {
      float: right;
@@ -691,6 +669,13 @@
     letter-spacing: 0.25px;
     line-height: 4px;
 }
+#about .line h4 {
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.25px;
+   margin-top: 3.25em;
+}
  #about a.main-button-icon {
     display: inline-block;
     margin-top: 60px;
@@ -833,3 +818,8 @@ body::-webkit-scrollbar-thumb {
     scrollbar-width: 1em;
     scrollbar-color: #234d86 #17102e;
   }
+
+  @keyframes carre {from {r: 0} to {r: 60px}}
+  #myClip circle {
+      animation: carre 15s infinite;
+}
