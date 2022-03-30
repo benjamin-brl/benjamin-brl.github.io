@@ -339,7 +339,7 @@
      padding-right: 35px;
 }
  .header-area .main-nav .nav li.submenu:after {
-     font-family: FontAwesome;
+    font-family: FontAwesome;
      content: "\f107";
      font-size: 12px;
      color: #fff;
@@ -348,7 +348,7 @@
      top: 12px;
 }
  .main-nav .nav li.submenu:after {
-     color: #7a7a7a;
+     color: #777;
 }
  .header-area .main-nav .nav li.submenu ul {
      position: absolute;
@@ -381,7 +381,7 @@
      transition: all 0.3s ease 0s;
      position: relative;
      font-size: 13px;
-     border-bottom: 1px solid #f5f5f5;
+     border-bottom: 1px solid #fff;
 }
  .header-area .main-nav .nav li.submenu ul li a:hover {
      background: #fff;
@@ -626,10 +626,6 @@
     line-height: 60px;
     border-radius: 50%;
     color: #fff;
-    box-shadow: 0px 0px 10px #0001;
-}
- .scroll-to-section{
-    scroll-behavior: smooth;
 }
  .Modern-Slider .text-content {
     width: 80%;
@@ -730,9 +726,9 @@
  #about .left-text-content h4 {
      text-transform: uppercase
 }
- #about .right-text-content p {
+ #cv .right-text-content p {
     font-size: 16px;
-    line-height: 27px;
+    line-height: 28px;
     color: #234d86;
     text-align: justify;
     padding-right: 5em;
@@ -752,7 +748,6 @@
     float: right;
 }
  footer .right-text-content p {
-    color: #fff;
     font-size: 14px;
     margin-right: 15px;
     text-transform: uppercase;
@@ -854,6 +849,27 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(145deg, #234d86 0%, #17102e 100%);
     border-radius: 25px;
     border: 1px solid #fff
+}
+footer .fixleft {
+    margin-left: 10%;
+}
+footer .fixleft .down-menu a{
+    margin-top: 0.5em;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7.5%;
+    transition: all 0.3s ease-in-out;
+}
+footer .fixleft .down-menu a:hover{
+    opacity: 50%;
+}
+hr {
+    border: none;
+    overflow: visible;
+    font-family: FontAwesome;
+    border-top: 3px double #fff;
+    color: #fff;
+    height: 5px
 }
 * { /* Les caprices de Firefox */
     scrollbar-width: 1em;
