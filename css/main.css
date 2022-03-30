@@ -91,7 +91,7 @@
      background-color: #fff;
      color: #234d86;
 }
-#gradient-svg{
+ #gradient-svg{
     color: linear-gradient(145deg, #234d86 0%, #17102e 100%);
 }
  a.main-filled-button {
@@ -243,6 +243,28 @@
      text-transform: uppercase;
      letter-spacing: 2px;
      float: left;
+}
+ .header-area .main-nav svg {
+    width: 50px;
+    height: auto;
+    margin-left: -14em;
+    margin-top: 0.8em;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    fill-opacity: 10%;
+}
+ .header-area .main-nav svg:hover{
+    width: 75px;
+    height: auto;
+    margin-left: -14.6em;
+    margin-top: 0.1em;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    fill-opacity: 100%;
 }
  .header-area .main-nav .nav {
      float: right;
@@ -668,8 +690,27 @@
     text-transform: uppercase;
     letter-spacing: 0.25px;
     line-height: 4px;
+    text-align: right;
+    margin-right: -15em;
 }
-#about .line h4 {
+#about .service-item2 h4 {
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.25px;
+   line-height: 4px;
+   text-align: right;
+}
+#about .service-item3 h4 {
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.25px;
+   line-height: 4px;
+   text-align: right;
+   margin-top: 1em;
+}
+ #about .line h4 {
    font-size: 15px;
    font-weight: 700;
    text-transform: uppercase;
@@ -770,10 +811,10 @@
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-#projects .filters ul li a:hover {
+ #projects .filters ul li a:hover {
     color: #234d86;
 }
-.item{
+ .item{
     visibility: visible;
     opacity: 1;
 }
@@ -818,8 +859,3 @@ body::-webkit-scrollbar-thumb {
     scrollbar-width: 1em;
     scrollbar-color: #234d86 #17102e;
   }
-
-  @keyframes carre {from {r: 0} to {r: 60px}}
-  #myClip circle {
-      animation: carre 15s infinite;
-}
