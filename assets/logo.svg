@@ -1,0 +1,7 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <mask id="a">
+        <rect height="100%" width="100%" fill="#fff" rx="5" />
+        <text x="12.5%" y="67.5%" font-family="Arial" stroke="#000" font-size="12" >SM</text>
+    </mask>
+    <rect fill="#4b8" mask="url(#a)" height="100%" width="100%" />
+</svg>
