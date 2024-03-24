@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="icon" href="assets/babarelephant.svg" type="image/svg+xml"/>
+  <title>Connexion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="js/cookie.js"></script>
+  <!-- <script type="text/javascript" src="js/preload.js"></script> -->
+</head>
+
+<body data-bg="no" data-nav="no">
+  <h1>DolibarrAPI</h1>
+  <main>
+    <section>
+      <h2>Bienvenue</h2>
+      <hr />
+      <h3 id="catch_error">Identifiez-vous</h3>
+    </section>
+    <section>
+      <form>
+        <label for="identifiant">Nom d'utilisateur<sup>*</sup></label>
+        <input id="identifiant" type="text" placeholder="Votre identifiant" required="required" />
+
+        <label for="retenue_id">Se souvenir de mon identifiant</label>
+        <input id="retenue_id" type="checkbox"/>
+
+        <label for="mdp">Mot de passe<sup>*</sup></label>
+        <input id="mdp" type="password" placeholder="Votre mot de passe" required="required" />
+
+        <label for="domaine">Domaine<sup>*</sup></label>
+        <input id="domaine" type="url" placeholder="Votre nom de domaine ou IP" required="required" list="defaultList" />
+
+        <datalist id="defaultList">
+          <option value="10.0.52.18">
+          <option value="10.0.52.137">
+          <option value="10.0.52.152">
+          <option value="192.168.1.122">
+          <option value="dolibarr.benjapied.com">
+        </datalist>
+
+        <label for="retenue_domaine">Se souvenir de mon domaine</label>
+        <input id="retenue_domaine" type="checkbox"/>
+
+        <input id="connect" type="submit" value="Connexion" class="connect" />
+      </form>
+      <a href="#" class="oublie">mot de passe oublié ?</a>
+    </section>
+  </main>
+
+  <footer class="medium-blur">
+    <p>DolibarrAPI - <a class="about" href="about.html">about</a> - 2023</p>
+  </footer>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</html>

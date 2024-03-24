@@ -1,0 +1,117 @@
+#tagFood{
+	display:inline-block;
+	padding-left : 0px;
+	font-style: italic;
+    margin : 0px;
+}
+
+li.tag{
+	display:inline-block;
+	border:1px solid #0000000d;
+	background-color:#0000000d;
+	padding:2px;
+	margin:2px;
+	border-radius: 2px;
+}
+
+li.tag:hover{
+	border-width:1px;
+	border-style : solid;
+	border-color : #bbb;
+	background-color:#0000001a;	
+}
+
+span.tag {
+	color:#ff3232;
+}
+
+div.card {
+    position : relative;
+    width:180px;
+    height : 250px;
+    float:left;
+    padding:10px;
+    margin : 10px;
+    background-color : var(--fondC);
+    box-shadow: 1px 1px 4px #bbb;
+    border-radius: 1.5vh;
+}
+
+div.photoCard>img{    
+    position : relative;
+    top:-10px;
+    left : -10px;
+    max-width : 200px;
+    max-height: 140px;
+    border-radius: 1.5vh 1.5vh 0 0;
+}
+
+div.descrCard{
+    position : relative;
+    top:0px;
+}
+
+div.descrCard a{
+    text-decoration: double;
+    color: #000;
+}
+
+div.tagCard{
+    position: absolute;
+    bottom: 10px;
+    width: 180px;
+    text-align: right;
+}
+
+#galerie{
+	margin-top : 0px;
+	margin-bottom : 20px;
+	padding-left : 0px;
+	background-color : #fafafa;
+}
+
+#galerie li{
+	display : inline-block;	
+}
+
+img.note{
+	padding-left : 1px;
+	vertical-align : sub;
+}
+
+img.galerie{
+	border:1px solid #efefef;
+    border-radius: 1em;
+}
+
+#note {
+    float : right;
+    
+}
+
+img.aimer{
+    vertical-align : middle;	
+}
+
+#critiques{
+    list-style-type : none;
+    padding-left : 0px;
+}
+
+#critiques>li{
+    border:1px solid #0000000d;
+	background-color:#0000000d;
+	padding:8px;
+	margin:5px;
+	border-radius: 2px;
+}
+
+div.userCard{
+    position : relative;
+    width:180px;
+    height : 125px;
+    float:left;
+    padding:10px;
+    margin : 10px;  
+    box-shadow: 1px 1px 4px #bbb;
+}

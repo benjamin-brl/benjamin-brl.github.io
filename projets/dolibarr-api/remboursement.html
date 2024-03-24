@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="icon" href="assets/babarelephant.svg" />
+  <title>Remboursement</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="js/cookie.js"></script>
+  <script type="text/javascript" src="js/preload.js"></script>
+</head>
+
+<body data-nav="yes" data-bg="yes">
+  <header class="medium-blur">
+    <nav class="navbar">
+      <a href="accueil.html" class="nav-branding">DolibarrAPI</a>
+
+      <ul class="nav-menu medium-blur">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Accueil</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="remboursement.html" class="nav-link grey">Remboursements</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="banque.html" class="nav-link">Banque</a>
+        </li>
+
+        <li class="nav-item">
+          <a id="disconnect" class="nav-link">Déconnexion</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="center white">Remboursement</h1>
+      <h3 class="white">Effectuer un remboursemenet</h3>
+      <hr />
+    </section>
+    <section>
+      <form>
+        <label for="dest">Destinataire<sup>*</sup></label>
+        <input id="dest" type="text" placeholder="Nom du destinataire" required list="Destinataire"/>
+        <label for="montant">Montant<sup>*</sup></label>
+        <input id="montant" type="text" placeholder="Saisir le montant" required min="0" minlength="0" step="0.01" />
+        <input id="envoie" type="submit" value="Envoyer" class="connect" />
+        <datalist id="Destinataire">
+        </datalist>
+      </form>
+    </section>
+  </main>
+  <footer class="medium-blur">
+    <p>DolibarrAPI - <a class="about" href="about.html">about</a> - 2023</p>
+  </footer>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/remboursement.js"></script>
+
+</html>

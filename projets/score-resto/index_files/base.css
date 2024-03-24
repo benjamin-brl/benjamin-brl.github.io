@@ -1,0 +1,242 @@
+@import url();
+
+:root{
+    --largeurPage: 900px;
+    --largeurMenuCont : 200px;
+    --margeCalc: calc((100% - var(--largeurPage)) / 2);
+    --margeMenuHaut : 15px;
+    --hauteurMenuGene:60px;
+    --coulA1:#5A7694;
+    --coulA2:#D7E5ED;
+    --coulB1:#566459;
+    --coulB2:#90974A;
+    --coulC:#CDBCA0;
+    --fondC:#fcfbfb;
+    --padding_cote:5px;
+}
+
+:target:before {
+    content:"";
+    display:block;
+    background-color:rgb(255,255,255);
+    height:calc(var(--hauteurMenuGene) + var(--margeMenuHaut)); /* fixed header height*/
+    margin:calc((var(--hauteurMenuGene) + var(--margeMenuHaut)) * -1) 0 0; /* negative fixed header height */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color : #333;
+    font-size : 14px;
+    line-height : 1.3;
+    scroll-behavior: smooth;
+    background-color : var(--fondC);
+}
+
+#logo {
+    text-align : center;
+}
+
+#corps, #menuContextuel, #menuGeneral  {
+    /*animation*/
+    transition-duration : 0.4s;
+}
+
+#corps{
+    top : 15px;
+    margin-top : calc(var(--hauteurMenuGene) + var(--margeMenuHaut));
+    padding-bottom : 50px;
+    padding-left : 5px;
+    padding-right : 5px;
+    position : absolute;
+    left : var(--margeCalc);
+    width : var(--largeurPage);
+    background-color : #fff;
+    /*z-index : 1;*/
+    box-shadow: 0px 0px 6px #999;
+    min-height: 500px;
+}
+
+span.site {
+    color : var(--coulA1);
+    font-weight: bold;
+}
+
+#menuContextuel {
+    position : fixed;
+    left :  var(--margeCalc);
+    width : var(--largeurPage);
+    /*height : 100%;*/
+    background-color : var(--fondC);
+    z-index:0;
+
+    overflow : hidden;
+    top : calc(var(--hauteurMenuGene) + var(--margeMenuHaut) + 50px);
+    margin-top:0px;
+    padding-top:0px;
+    list-style-type : none;
+    padding-left : 0px;
+    width : var(--largeurMenuCont);
+    border-radius: 3px;
+}
+
+
+.welcome {
+    background: linear-gradient(90deg, #ed2130 0%, #e0224c 55%, #c9238b 100%);
+    border: transparent solid 2px;
+    border-radius: 5vh;
+    margin: 1em;
+}
+
+.welcome p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+}
+
+#bouton {
+    top : calc(var(--hauteurMenuGene) + var(--margeMenuHaut) + 50px);
+    position : fixed;
+    left :  calc((100% - var(--largeurPage)) / 2 - 70px);
+    width : 40px;
+    height : 25px;
+}
+
+#bouton>div {
+    margin-left : 4px;
+    border : 1px solid #000;
+    width : 30px;
+    height : 2px;
+    background-color : #000;
+    margin-top : 3px;
+}
+
+nav {
+    position:fixed;
+    top:var(--margeMenuHaut);
+    left:0px;
+    width:100%;
+    height:var(--hauteurMenuGene);
+    z-index:100;
+}
+
+#menuGeneral {
+    text-align : center;
+    width : calc(var(--largeurPage) + 220px + var(--padding_cote) + 2px);
+    height : var(--hauteurMenuGene);
+    background-color : #2d2d2ded;
+    color : #fff;
+    margin:auto auto;
+    box-shadow: 0px 0px 6px #999;
+    border-radius: 1.5vh;
+}
+#menuGeneral {
+    list-style-type: none;
+    padding-left : 0px;
+}
+
+#menuGeneral>li{
+    float : left;
+    width: 14.28%;
+    height : 100%;
+    vertical-align: middle;
+    line-height:60px;
+}
+
+#menuGeneral>li:hover{
+    background-color : rgba(255,255,255,0.1);
+}
+
+#logo>a>img{
+    position : relative;
+    top : -10px;
+}
+
+#menuGeneral>li>a{
+    height : var(--hauteurMenuGene);
+    display : inline-block;
+    vertical-align: middle;
+    color:#eee;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+    font-size : 16px;
+    font-weight: bold;
+}
+
+#menuGeneral>li>a>img{
+    vertical-align: middle;
+}
+
+#menuContextuel>li>a{
+    color:var(--coulA1);
+    font-weight : bold;
+    text-decoration : none;
+}
+
+#menuContextuel>li {
+    padding-top : 5px;
+    padding-bottom : 5px;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    padding-left : 8px;
+    /*background-color : rgba(238,144,9,0.3);*/
+}
+
+#menuContextuel>li:first-child {
+    text-align : center;
+}
+
+#menuContextuel>li:hover {
+    background-color : var(--coulA2);
+}
+
+#menuContextuel>li:first-child:hover {
+    background-color : var(--fondC);
+}
+
+#menuContextuel:hover {
+    left: calc((100% - var(--largeurPage)) / 2 - 100px);
+    visibility:visible;
+    box-shadow: 0px 0px 6px #999;
+}
+
+#bouton:hover ~ #menuContextuel {
+    left: calc((100% - var(--largeurPage)) / 2 - 100px);
+    box-shadow: 0px 0px 6px #999;
+}
+
+#bouton:hover ~ #corps {
+    left: calc((100% - var(--largeurPage)) / 2 + 100px);
+}
+
+#menuContextuel:hover ~ #corps {
+    left : calc((100% - var(--largeurPage)) / 2 + 100px);
+}
+
+#accroche{
+    margin-top : 50px;
+    margin-bottom : 50px;
+    color : #333;
+    font-size : 14px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+
+    font-size: 72px;
+    background: linear-gradient(90deg, #FC2500, #C2289F );
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a.aimer{
+    text-decoration: none;
+}
+
+#alerte{
+    background-color: #FC2500;
+}
+
+img {
+    border-radius: 1em;
+}

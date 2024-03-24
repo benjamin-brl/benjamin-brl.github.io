@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0042)https://porfolio.code/projets/score-resto/ -->
+<html data-lt-installed="true" webcrx=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Liste des restaurants</title>
+    <link href="./index_files/base.css" rel="stylesheet">
+    <link href="./index_files/form.css" rel="stylesheet">
+    <link href="./index_files/cgu.css" rel="stylesheet">
+    <link href="./index_files/corps.css" rel="stylesheet">
+    <link href="./index_files/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://porfolio.code/images/logo.png">
+<style>
+      #france-verif-popup {
+        z-index: 2147483650 !important;
+      }
+      #userlike {
+        z-index: 0;
+        position: fixed;
+      }
+      #honeyContainer {
+          position: fixed;
+          z-index: 100;
+      }
+      #france-verif-popup div:empty {
+        display: block !important;
+        pointer-events: none;
+        height: inherit !important;
+      }
+      #france-verif-popup:focus, #france-verif-popup div:focus{
+        outline: none !important;
+      }
+      .france-verif-modal div:empty {
+        height: inherit !important;
+      }
+      .france-verif-modal:before{
+          content:'';
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          background: rgba(0, 0, 0, 0.4) !important;
+      }
+    </style><style data-styled="active" data-styled-version="5.3.11"></style><script src="./index_files/js" async=""></script><script type="text/javascript" async="" src="./index_files/taas"></script></head>
+
+
+<body>
+    <nav>
+        <ul id="menuGeneral">
+            <li><a href="https://porfolio.code/projets/score-resto/?action=accueil">Accueil</a></li>
+            <li><a href="https://porfolio.code/projets/score-resto/?action=recherche"><img src="./index_files/rechercher.png" alt="loupe">Recherche</a></li> 
+                            
+                <li><a href="https://porfolio.code/projets/score-resto/"></a></li>
+                            <li id="logo"><a href="https://porfolio.code/projets/score-resto/?action=accueil"><img src="./index_files/logoBarre.png" alt="logo"></a></li>
+            <li></li>
+            <li><a href="https://porfolio.code/projets/score-resto/?action=cgu">CGU</a></li>
+                            <li><a href="https://porfolio.code/projets/score-resto/?action=connexion"><img src="./index_files/profil.png" alt="loupe">Connexion</a></li>
+                    </ul>
+    </nav>
+    <div id="bouton">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul id="menuContextuel">
+        <li><img src="./index_files/logoBarre.png" alt="logo"></li>
+            </ul>
+    <div id="corps"><div id="header" class="welcome">
+    <p>
+        <write-and-delete timeout="1000" loop="true" speed="100">A la recherche d'un bon resto ?<span style="color: currentcolor; position: relative; width: 1ch;">_</span></write-and-delete>
+    </p>
+</div>
+<h1>Le Top 4</h1>
+    <div class="card">
+        <div class="photoCard">
+                            <img src="./index_files/cidrerieDuFronton.jpg">
+                    </div>
+        <div class="descrCard"><a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=4">Cidrerie du fronton</a>            <br>
+                        Place du Fronton            <br>
+            64210            Arbonne            <br><br>
+            <strong>5/5</strong>
+        </div>
+        <div class="tagCard">
+            <ul id="tagFood">
+                                    <li class="tag"><span class="tag">#</span>sud ouest</li>
+                                    <li class="tag"><span class="tag">#</span>sandwich</li>
+                                    <li class="tag"><span class="tag">#</span>grillade</li>
+                            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="photoCard">
+                            <img src="./index_files/auberge.jpg">
+                    </div>
+        <div class="descrCard"><a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=7">la petite auberge</a>            <br>
+            15            rue des cordeliers            <br>
+            64100            Bayonne            <br><br>
+            <strong>5/5</strong>
+        </div>
+        <div class="tagCard">
+            <ul id="tagFood">
+                                    <li class="tag"><span class="tag">#</span>vegan</li>
+                            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="photoCard">
+                            <img src="./index_files/rotisserieDuRoyLeon.jpg">
+                    </div>
+        <div class="descrCard"><a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=9">La Rotisserie du Roy Léon</a>            <br>
+            8            rue de coursic            <br>
+            64100            Bayonne            <br><br>
+            <strong>4/5</strong>
+        </div>
+        <div class="tagCard">
+            <ul id="tagFood">
+                                    <li class="tag"><span class="tag">#</span>viande</li>
+                            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="photoCard">
+                            <img src="./index_files/leBistrotSainteCluque.jpg">
+                    </div>
+        <div class="descrCard"><a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=6">Le Bistrot Sainte Cluque</a>            <br>
+            9            Rue Hugues            <br>
+            64100            Bayonne            <br><br>
+            <strong>4/5</strong>
+        </div>
+        <div class="tagCard">
+            <ul id="tagFood">
+                                    <li class="tag"><span class="tag">#</span>viande</li>
+                            </ul>
+        </div>
+    </div>
+
+<h1>Liste des Restos</h1>
+
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/entrepote.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=1">l'entrepote</a>    <br>
+    2    rue Maurice Ravel    <br>
+    33000    Bordeaux</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>sud ouest</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/barDuCharcutier.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=2">le bar du charcutier</a>    <br>
+    30    rue Parlement Sainte-Catherine    <br>
+    33000    Bordeaux</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>sud ouest</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/sapporo.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=3">Sapporo</a>    <br>
+    33    rue Saint Rémi    <br>
+    33000    Bordeaux</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>orientale</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/cidrerieDuFronton.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=4">Cidrerie du fronton</a>    <br>
+        Place du Fronton    <br>
+    64210    Arbonne</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>sud ouest</li>
+                    <li class="tag"><span class="tag">#</span>sandwich</li>
+                    <li class="tag"><span class="tag">#</span>grillade</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/agadir.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=5">Agadir</a>    <br>
+    3    Rue Sainte-Catherine    <br>
+    64100    Bayonne</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>orientale</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/leBistrotSainteCluque.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=6">Le Bistrot Sainte Cluque</a>    <br>
+    9    Rue Hugues    <br>
+    64100    Bayonne</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>viande</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/auberge.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=7">la petite auberge</a>    <br>
+    15    rue des cordeliers    <br>
+    64100    Bayonne</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>vegan</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/laTableDePottoka.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=8">La table de POTTOKA</a>    <br>
+    21    Quai Amiral Dubourdieu    <br>
+    64100    Bayonne</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>grillade</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/rotisserieDuRoyLeon.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=9">La Rotisserie du Roy Léon</a>    <br>
+    8    rue de coursic    <br>
+    64100    Bayonne</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>viande</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/barDuMarche.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=10">Bar du Marché</a>    <br>
+    39    Rue des Basques    <br>
+    64100    Bayonne</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>sud ouest</li>
+            </ul>
+</div>
+</div>
+<div class="card">
+<div class="photoCard">
+            <img src="./index_files/trinquetModerne.jpg" alt="photo du restaurant">
+    </div>
+<div class="descrCard">
+    <a href="https://porfolio.code/projets/score-resto/?action=detail&amp;idR=11">Trinquet Moderne</a>    <br>
+    60    Avenue Dubrocq    <br>
+    64100    Bayonne</div>
+<div class="tagCard">
+    <ul id="tagFood">
+                    <li class="tag"><span class="tag">#</span>sud ouest</li>
+                    <li class="tag"><span class="tag">#</span>viande</li>
+            </ul>
+</div>
+</div>
+
+</div>
+
+<script src="./index_files/lib.js.téléchargement"></script>
+<script src="./index_files/webcomponent.js.téléchargement"></script>
+
+
+<deepl-input-controller><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div><div class="dl-input-translation-container svelte-ju4595"><div></div></div></div></template></deepl-input-controller><iframe src="./index_files/saved_resource.html" style="display: none;"></iframe></body><div id="france-verif-popup" style="pointer-events: none; width: auto; position: fixed !important; top: 2px !important; right: 0px !important; z-index: 2147483647 !important; display: block !important;"><div><template shadowrootmode="open"><style data-styled="active" data-styled-version="5.3.11"></style><div class="sc-hIUJlX hhPLyG dragContainer" style="transform: translate(0px, 80px);"><div class="sc-jnOGJG bCwDxM toaster-position bottom"></div></div></template></div></div></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="icon" href="assets/babarelephant.svg" type="image/svg+xml"/>
+  <title>Note de frais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="js/cookie.js"></script>
+  <!-- <script type="text/javascript" src="js/preload.js"></script> -->
+</head>
+
+<body data-bg="yes" data-nav="yes">
+  <header class="medium-blur">
+    <nav class="navbar">
+      <a href="accueil.html" class="nav-branding">DolibarrAPI</a>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Accueil</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="remboursement.html" class="nav-link">Remboursements</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="banque.html" class="nav-link">Banque</a>
+        </li>
+
+        <li class="nav-item">
+          <a id="disconnect" class="nav-link">Déconnexion</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="center white">Note de frais</h1>
+      <h3 class="white">Créer une note de frais</h3>
+      <hr />
+    </section>
+    <section>
+      <form>
+        <label for="date_deb">Date de début<sup>*</sup></label>
+        <input id="date_deb" type="date" required></input>
+
+        <label for="date_fin">Date de fin<sup>*</sup></label>
+        <input id="date_fin" type="date" required></input>
+
+        <label for="montant">Montant<sup>*</sup></label>
+        <input id="montant" type="number" required min="0" step="10"></input>
+
+        <label for="note_pub">Note (publique)</label>
+        <textarea id="note_pub" maxlength="2000"></textarea>
+
+        <label for="note_priv">Note (privée)</label>
+        <textarea id="note_priv" maxlength="2000"></textarea>
+
+        <input id="envoie" type="submit" value="Envoyer" class="connect"></input>
+      </form>
+      <datalist id="approbateur">
+      </datalist>
+    </section>
+  </main>
+  <footer class="medium-blur">
+    <p>DolibarrAPI - <a class="about" href="about.html">about</a> - 2023</p>
+  </footer>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/frais.js"></script>
+
+
+</html>
