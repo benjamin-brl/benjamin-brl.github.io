@@ -30,9 +30,9 @@ $('a').mouseenter(function () {
     cursor2.removeClass('active');
 });
 
-$('div[data-popup]').each(function() {
+$('div[data-popup]').each(function () {
     const description = $(this).children('p')
-    $(this).mouseenter(function(e) {
+    $(this).mouseenter(function (e) {
         description.addClass('active');
         description.css({ top: e.pageY + 'px', left: e.pageX + 'px' });
         description.css({ top: e.pageY + 'px', left: e.pageX + 'px' });
@@ -46,7 +46,7 @@ $('div[data-popup]').each(function() {
 })
 
 $(window).scroll(() => {
-    const pourcentage = Math.round(((scrollY + innerHeight) / (document.documentElement.scrollHeight)) * 100,0);
+    const pourcentage = Math.round(((scrollY + innerHeight) / (document.documentElement.scrollHeight)) * 100, 0);
     scroller.val(pourcentage)
     pourcent.text(`${pourcentage}%`)
 });

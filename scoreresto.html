@@ -1,0 +1,101 @@
+<html lang="fr" data-lt-installed="true" webcrx="">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+	<title>BARIAL Benjamin | PorFolio</title>
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+
+	<div class="trame">
+		<div id="pourcent"></div>
+		<progress min="" value="" max="100" id="scroller"></progress>
+	</div>
+	<div class="cursor-1" style="top: 5px; left: 1696px;"></div>
+	<div class="cursor-2" style="top: 5px; left: 1696px;"></div>
+	<div id="menu-bars" class="fas fa-bars"></div>
+
+	<header>
+
+		<a href="/" class="logo"> <span>BARIAL</span>Benjamin</a>
+
+	</header>
+	<section class="experience" id="competence">
+		<h1 class="heading"> <span>Score</span>Resto</h1>
+		<div class="box-container">
+			<div class="box">
+				<div class="content">
+					<h3>PHP</h3>
+					<span>Description</span>
+					<p>score-resto est une application web similaire à TripAdvisor sauf que celui-ci est centré uniquement sur les restaurants.<br>
+						<a target="_blank" href="/projets/score-resto/">Visualiser la page</a>
+					</p>
+					<span>Compétences</span>
+					<canvas id="chart"></canvas>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section style="margin-top: -10%;" class="portfolio" id="portfolio">
+		<div class="box-container">
+			<div data-popup="popup" class="box">
+				<img src="assets/resto.png">
+			</div>
+		</div>
+	</section>
+	<script src="js/app.js"></script>
+	<script>
+		const data = {
+			labels: [
+				'Gestion Informatique',
+				'Support et Assistance',
+				'Présence en ligne',
+				'Développement Professionnel'
+			],
+			datasets: [{
+				label: 'Compétences',
+				data: [46, 59, 59, 76],
+				fill: true,
+				backgroundColor: 'rgba(255, 99, 132, 0.2)',
+				borderColor: 'rgb(255, 99, 132)',
+				pointBackgroundColor: 'rgb(255, 99, 132)',
+				pointBorderColor: '#fff',
+				pointHoverBackgroundColor: '#fff',
+				pointHoverBorderColor: 'rgb(255, 99, 132)'
+			}]
+		};
+		const config = {
+			type: 'radar',
+			data: data,
+			options: {
+				elements: {
+					line: {
+						borderWidth: 3
+					}
+				}
+			},
+			scales: {
+				r: {
+					min: 0,
+					max: 100,
+					stepSize: 1
+				}
+			}
+		};
+		new Chart(document.getElementById('chart'), {
+			type: 'radar',
+			data: data,
+			options: config
+		}
+		);
+	</script>
+</body>
+
+</html>
